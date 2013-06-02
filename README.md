@@ -1,7 +1,6 @@
 cal
 ===
 
-cal
 
 Vacation planner using FullCalendar plugin and Backbone and WebSockets
 
