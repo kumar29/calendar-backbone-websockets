@@ -1,0 +1,158 @@
+body, div, ul, li
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+	
+.banner
+{
+	height: 30px;
+	border: 0px;
+	white-space: nowrap;
+	background: #000000;
+	overflow: hidden;
+}
+
+.appname
+{
+	width: 285px;
+	height: 30px;
+	min-width: 285px;
+	background-image: url('../images/banner_241X26_blk.png');
+	background-repeat: no-repeat;
+	float:left;
+}
+
+.logo 
+{
+  width: 640px;
+  height: 30px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  float:right;
+}
+
+.subBannerContainer 
+{
+	background: url("../images/HBBBase00.png") repeat-x scroll left top transparent;
+	height: 33px;
+}
+
+.loggedInUserContainer
+{
+	float:right;
+	display:none;
+}
+
+.loggedInUserContainer ul, .loggedInUserContainer li
+{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	list-style-type: none;
+	display: inline;
+}
+
+.loggedInUserText
+{
+	text-align: center;
+	color: #222222;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+.loggedInUserImage
+{
+	width: 30px;
+  	height: 30px;
+  	float:right;
+  	background-repeat: no-repeat;
+}
+
+.loginContainer
+{
+	text-align: center;
+	margin: 100;
+}
+
+.loginContainer label
+{
+	display: block;
+	text-align:left;
+}
+
+.loginContainer input
+{
+	display: block;
+	text-align:left;
+}
+
+.loginContainer button
+{
+	display: block;
+	text-align:left;
+	margin:20 0 0 0;
+}
+
+#MainArea
+{
+	display:none;
+	margin: 0 auto;
+	margin-top: 40px;
+	width:1100px;
+}
+
+
+#external-events 
+{
+		float: left;
+		width: 150px;
+		padding: 0 10px;
+		border: 1px solid #ccc;
+		background: #eee;
+		text-align: left;
+}
+		
+#external-events h4 
+{
+		font-size: 16px;
+		margin-top: 0;
+		padding-top: 1em;
+}
+		
+.external-event { /* try to mimick the look of a real event */
+		margin: 10px 0;
+		padding: 2px 4px;
+		background: #3366CC;
+		color: #fff;
+		font-size: .85em;
+		cursor: pointer;
+}
+
+#calendar 
+{
+	width: 850px;
+	float: right;
+}
+
+#dialog-confirm
+{
+   text-align: center;
+}
+
+#dialog-confirm label
+{
+   display: block;
+   text-align:left;
+}
+
+#dialog-confirm input
+{
+   display: block;
+   text-align:left;
+}

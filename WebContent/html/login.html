@@ -1,0 +1,80 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/lib/underscore.js"></script>
+   <script src="js/lib/backbone.js"></script>
+	<script src="js/lib/fullcalendar-1.6.1/fullcalendar/fullcalendar.js"></script>
+	
+	<link rel="stylesheet" href="js/lib/fullcalendar-1.6.1/demos/cupertino/jquery-ui-1.10.3.custom.css" />
+	<link rel="stylesheet" href="js/lib/fullcalendar-1.6.1/fullcalendar/fullcalendar.css" />
+	
+	<link rel="stylesheet" href="css/cal.css" />
+  
+	<script src="js/router.js"></script>
+	<script src="js/view/loginview.js"></script>
+	<script src="js/view/calendarview.js"></script>
+	<script src="js/model/user.js"></script>
+	<script src="js/model/users.js"></script>
+	<script src="js/model/calendarevent.js"></script>
+	<script src="js/socket.js"></script>
+	
+	<script src="js/util/utils.js"></script>
+	
+	<script type="text/template" id="updatedelete-template">
+      <div id="dialog-confirm" title="Update or Delete the event">
+         <label for="eventName">Event</label>
+         <input id="eventName" type="text" value="<%= text %>" disabled="true"/>
+      </div>
+   </script>
+    
+</head>
+<body>
+    <div class="banner">
+        <div class="appname"> </div>
+        <div class="logo"> </div>
+    </div>
+    <div class="subBannerContainer">
+       <!--  Initially hidden -->
+       <div class="loggedInUserContainer">
+	       <ul>
+	         <li> 
+	            <div class="loggedInUserText"> 
+	               <a href=""></a>
+	            </div>
+	         </li>
+	         <li>
+	      		<div class="loggedInUserImage"></div>      
+	         </li>
+	      </ul>
+      </div>
+    </div>
+    <!--  Login fields -->
+    <div class="loginContainer">
+       <label for="userName">User name</label>
+       <input id="loginField" type="text" value="Kumar">
+       <label for="password">Password</label>
+       <input id="password" type="password" value="password"/>
+       
+       <button id="loginBtn">Login</button>
+    </div>
+    
+    <!--  Initially hidden -->
+    <div id="MainArea">
+       <div id="external-events">
+	   <h4>Calendar events</h4>
+          <div class="external-event">All day vacation</div>
+		  <div class="external-event">Vacation AM</div>
+		  <div class="external-event">Vacation PM</div>
+		  <div id="all-events">
+	         <h4>All user events</h4>
+	         <button id="allEventsBtn">Show Pyramid Team Events</button>
+	      </div>
+       </div>
+       
+       <div id="calendar"></div>
+    </div>
+    
+</body>
+</html>
