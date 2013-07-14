@@ -5,6 +5,8 @@ cal
 Vacation planner using FullCalendar plugin and Backbone and WebSockets
 
   A vacation planner for a group of people using Adam Shaw's fullcalendar plugin http://arshaw.com/fullcalendar/
+  
+  Refer to the Angular js version at https://github.com/kumar29/calendar-angular-websockets
 
   Uses Backbone and WebSockets to add real time updates to calendar modifications.
 
